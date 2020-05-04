@@ -2,11 +2,11 @@
     $thead =[ "Type", "Nom", "Valeur"];
     $table = [ 
         "Type" => ["Booleen", "Entier", "Chaine de caractère", "Nombre a virgule"],
-        "Nom"   => ['$bool', '$integrer', '$string', '$float'],
+        "Nom"   => ['$bool', '$integer', '$string', '$float'],
         
     ];
     $bool ="true/false";
-    $integrer = 3;
+    $integer = 3;
     $string = "ceci est une chaine de caractère";
     $float = 1.5;
     
@@ -19,6 +19,7 @@
     <title>Job03</title>
 </head>
 <body>
+
     <style>
     table{
         border: 1px solid black;
@@ -48,7 +49,7 @@
             <tr>
                 <td><?php echo $table[ "Type"][1]; ?></td>
                 <td><?php echo $table["Nom"][1]; ?></td>
-                <td><?php echo $integrer; ?></td>
+                <td><?php echo $integer; ?></td>
             </tr>
             <tr>
                 <td><?php echo $table[ "Type"][2]; ?></td>
