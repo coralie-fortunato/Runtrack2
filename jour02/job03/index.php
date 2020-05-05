@@ -1,33 +1,26 @@
 <?php
-$min =1;
+$min = 0;
 $max = 100;
-$num =  $min;
 
- while ($num <= $max){
-	 
-	 if( ($num%3 == 0) && ($num%5 == 0)){
-        echo "FizzBuzz <br/>";} 
-        
-	 elseif($num%3 == 0){
-	 echo "Fizz<br/>";
+for ($num = $min; $num <= $max; $num++){
+    if($num >= $min && $num <= 20){
+        echo "<i>$num<br/></i>";
+    }
+    elseif($num >= 25 && $num <= 50){
+		if ($num >= 25 && $num<= 41) {
+        echo "<u>$num<br/></u>";}
+		elseif($num >= 43 && $num<= 50){
+			echo "<u>$num<br/></u>";}
+		else{
+		echo "La Plateforme <br/>";}
 		
+    }
+    else{
+        echo "$num<br/>";
+    }
 
-	  }
-	 elseif($num%5 == 0){
-	  echo "Buzz<br/>";}
-	  
-	  
-	 else{
-	 echo $num . "<br/>" ;}
-	 $num++;
-	
- }
+}
 
-
-
-
-
-?>
 
 
 

@@ -1,13 +1,27 @@
 <?php
-$min = 1;
+$min =1;
 $max = 100;
+$num =  $min;
 
-for ($num = $min; $num <= $max; $num++){
-    while($num / 3 = (int)){
-        echo $num . "Fizz";
-    }
+ while ($num <= $max){
+	 
+	 if( ($num%3 == 0) && ($num%5 == 0)){
+		echo "FizzBuzz <br/>";} 
+	 elseif($num%3 == 0){
+	 echo "Fizz<br/>";
+		
 
-}
+	  }
+	 elseif($num%5 == 0){
+	  echo "Buzz<br/>";}
+	  
+	  
+	 else{
+	 echo $num . "<br/>" ;}
+	 $num++;
+	
+ }
+
 
 
 
