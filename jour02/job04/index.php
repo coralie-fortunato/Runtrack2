@@ -6,18 +6,18 @@ $num =  $min;
  while ($num <= $max){
 	 
 	 if( ($num%3 == 0) && ($num%5 == 0)){
-		echo "FizzBuzz <br/>";} 
-	 elseif($num%3 == 0){
-	 echo "Fizz<br/>";
-		
+		 echo "FizzBuzz <br/>";} 
 
-	  }
+	 elseif($num%3 == 0){
+		 echo "Fizz<br/>"; }
+
 	 elseif($num%5 == 0){
-	  echo "Buzz<br/>";}
+		 echo "Buzz<br/>";}
 	  
 	  
 	 else{
-	 echo $num . "<br/>" ;}
+		 echo $num . "<br/>" ;}
+
 	 $num++;
 	
  }
