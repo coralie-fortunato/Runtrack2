@@ -2,7 +2,7 @@
    $count = 0;
    
    for ($i=2; $i<=1000; $i++){
-	   $flag=false;
+	   $flag=0;
 	   for ($j= 2; $j <$i;$j++)
 	   {
 		   $rem= $i%$j;
