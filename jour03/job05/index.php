@@ -2,45 +2,48 @@
 $str = "“On n est pas le meilleur quand
 on le croit mais quand on le sait.";
 $str = strtolower($str);
-$array = str_split($str);
 $length = strlen($str);
 
-$dic =  [
-        "Voyelles" => ['a', 'e','i', 'o', 'u','y'],
-        "Consonnes"=>  ['b', 'c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z']
-];
+$dic =  array(
+        "voyelles" => ["a", "e","i", "o", "u","y"],
+        "consonnes" =>  ["b", "c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","z"]
+);
 
-$consonne =0;
-$voyelle = 0;
 $i=0;
-$num_voy = count($dic["Voyelles"]);
-$num_cons = count($dic["Consonnes"]);
+$voyelle = 0;
+$consonne = 0;
 
-while ($i <= $length){
-        while( ($v = 0) <= $num_voy )
-		{
-                if($str[$i] == $dic["Voyelles"][$v]){
-                        $voyelle++;
-                        break;
+while ($i < $length)
+{
+	$num_voy = count($dic["voyelles"]);
+	$num_cons = count ($dic ["consonnes"]);
+	$v = 0;
+	$c = 0;
+	 while ($v < $num_voy)
+	 {
+		 if($str[$i] == $dic["voyelles"][$v])
+			 
+		 {
+			 $voyelle++;
+			 break;
+		
+		 }
 
-                }
-                $v++;
+		$v++;
+	 }
+	  while ($c < $num_cons)
+	   {
+		 if($str[$i] == $dic["consonnes"][$c])
+		 {
+			 $consonne++;
+			 break;
+		
+		 }
 
-        }
-        while( ($c = 0) <= $num_cons ){
-                if($str[$i]== $dic["Consonnes"][$c]){
-                        $consonne++;
-                        break;
-
-                }
-                $c++;
-
-        }
-
-        $i++;
-
-}
-echo $voyelle . $consonne;
+		$c++;
+	   }
+	  $i++;
+ }
 
 ?>
 <!DOCTYPE html>
@@ -51,6 +54,26 @@ echo $voyelle . $consonne;
         <title>Document</title>
 </head>
 <body>
+<table>
+<thead>
+    <tr>
+        <th>Voyelles</th>
+		<th>Consonnes</th>
+
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><?php echo $voyelle ?></td>
+        <td><?php echo $consonne ?></td>
+
+
+    </tr>
+</tbody>
+
+
+
+</table>
         
 </body>
 </html>
