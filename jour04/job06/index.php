@@ -6,7 +6,7 @@ if(isset($_GET["valider"])){
         echo "Nombre Pair";
     }
     elseif($value%2 == 1){
-        echo "Nombre Impair"
+        echo "Nombre Impair";
     }
 }
 
