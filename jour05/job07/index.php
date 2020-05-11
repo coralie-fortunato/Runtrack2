@@ -27,7 +27,7 @@ function cesar ($str, $decalage){
         
             }
             elseif(strtolower($str[$i]) == "z"){
-                echo $lettres[0+2];
+                echo $lettres[0+($decalage-1)];
             break;
             }
            
