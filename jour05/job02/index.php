@@ -1,10 +1,11 @@
 <?php
 function bonjour(bool $jour){
-    if($jour = true){
-        echo "Bonjour" . "n/";
+    
+    if($jour == true){
+        echo "Bonjour" . "<br />" ;
     }
-    else{
-        echo "Bonsoir" ."n/";
+    elseif($jour == false){
+        echo "Bonsoir " . "<br />" ;
     }
 }
 bonjour(true);
