@@ -27,7 +27,7 @@ if(isset($_POST["valider"])){
     <title>Job06</title>
 </head>
 <body>
-<h1>Mon formulaire</h1>
+<h1>Quel Style?</h1>
 
 <form action= "index.php" method="POST">
 <select name="style">
