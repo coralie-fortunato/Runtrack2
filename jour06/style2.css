@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+
+h1{
+    text-align: center;
+    color: blue;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    width:30%;
+    margin:auto;
+}
+button{
+    padding: 1em;
+    border-radius: 5%;
+    font-weight: bold;
+    background-color: blue;
+
+}
+select{
+    width:40%
+}

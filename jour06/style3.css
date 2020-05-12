@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+
+h1{
+    text-align: center;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:30%;
+    margin:auto;
+}
+button{
+    padding: 3%;
+    border-radius: 10%;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    font-size: 1em;
+
+}
+select{
+    width:100%;
+    margin-bottom:10%
+}
