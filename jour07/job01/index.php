@@ -33,8 +33,8 @@ echo $_SESSION['nbvisites'];
   <title>Compteur</title>
 </head>
 <body>
-  <form action="index-test" method="POST" >
-  <input type='submit' value ='reset'/>
+  <form action="index.php" method="POST" >
+  <input type='submit' name= 'reset' value ='reset'/>
   </form>
   
 </body>
