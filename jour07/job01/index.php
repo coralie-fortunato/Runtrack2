@@ -20,5 +20,6 @@ function nombre_vues(){
 }
 compteur();
 echo "La page a été vu " . nombre_vues() ." fois" . "<br />";
+echo
 
 ?>
