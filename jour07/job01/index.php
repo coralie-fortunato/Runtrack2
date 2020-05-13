@@ -1,25 +1,41 @@
 <?php
 session_start();
-$nbvisites = 1 ;
-function compteur(){
-    if(file_exists('page-test.php')){
-        $nbvisites = (int)file_get_contents('page-test.php');
-        $nbvisites++;
-       
-    }
-    file_put_contents('page-test.php', $nbvisites);
+
+if(!empty($_POST['reset']))
+{
+  session_destroy();
+  echo "0";
+}
+else 
+{
+  if (!isset($_SESSION['nbvisites']))
+{
+
+$_SESSION['nbvisites']=1;
 }
 
-function nombre_vues(){
- if(file_exists("page-test.php")){
-
- }
-
-  
-  return file_get_contents('page-test.php');
+else
+{
+$_SESSION['nbvisites']++;
 }
-compteur();
-echo "La page a été vu " . nombre_vues() ." fois" . "<br />";
-echo
+
+echo $_SESSION['nbvisites'];
+}
+
+
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compteur</title>
+</head>
+<body>
+  <form action="index-test" method="POST" >
+  <input type='submit' value ='reset'/>
+  </form>
+  
+</body>
+</html>
