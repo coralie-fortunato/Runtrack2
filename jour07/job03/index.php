@@ -31,14 +31,14 @@ if (isset($_POST['envoi']))
     <title>job03</title>
 </head>
 <body>
-    <form action="test.php" method="POST">
+    <form action="index.php" method="POST">
         <label for="prenom">Votre prénom</label>
         <input type="text" name="prenom" id="prenom">
         <button type="submit" name="envoi">Envoi</button>
         
 
     </form>
-    <form action="test.php" method="POST">
+    <form action="index.php" method="POST">
     <button type="submit" name="reset">Reset</button>
     
     </form>

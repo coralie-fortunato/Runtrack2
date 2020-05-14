@@ -39,3 +39,4 @@ echo $_SESSION['nbvisites'];
   
 </body>
 </html>
+
