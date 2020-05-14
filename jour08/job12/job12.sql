@@ -1,0 +1,1 @@
+SELECT * FROM `salle` ORDER BY `salle`.`capacite` DESC
