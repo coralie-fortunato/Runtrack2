@@ -28,6 +28,17 @@ $column_name = mysqli_fetch_all($query2);
                echo "<th>" . $column_name[$i] . "</th>";
            }
            ?>
+              <tbody>
+            <?php
+            for($j=0; $j < count($data); $j++){
+                echo "<tr>";
+                for($k=0; $k< count($data[$j]); $k++){
+                    echo "<td>" . $data[$j][$k] . "</td>";
+                }
+                echo"</tr>";
+            }
+            ?>
+        </tbody>
         </thead>
     </table>
     
