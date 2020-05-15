@@ -24,9 +24,9 @@ $column_name = mysqli_fetch_all($query2);
     <table>
         <thead>
             <?php
-           for($i=0; $i<=count($column_name); $i++ ){
-               echo "<th>" . $column_name[$i] . "</th>";
-           }
+           for($i=0; $i< count($column_name); $i++ ){
+            echo "<th>" . $column_name[$i][0] . "</th>";
+        }
            ?>
               <tbody>
             <?php

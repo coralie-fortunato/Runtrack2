@@ -3,10 +3,6 @@ $db= mysqli_connect("localhost","root","","jour08");
 $requete = "SELECT COUNT(*) AS nb_etudiants FROM etudiants;";
 $query= mysqli_query($db,$requete);
 $number_students = mysqli_fetch_all($query, MYSQLI_ASSOC);
-var_dump($number_students);
-
-
-
 
 ?>
 <!DOCTYPE html>
@@ -30,7 +26,7 @@ var_dump($number_students);
         </thead>
         <tbody>
             <?php
-                foreach($number_students as $number=>$value){
+                foreach($number_students[0] as $number=>$value){
                     echo "<tr>";
                     echo "<td>" . $value . "</td>";
                     echo "</tr>";

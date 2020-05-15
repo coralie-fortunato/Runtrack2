@@ -9,7 +9,7 @@ $query= mysqli_query($db,$requete);
 $query2= mysqli_query($db,$requete2);
 $prenom_t = mysqli_fetch_all($query);
 $column_name = mysqli_fetch_all($query2); 
-var_dump($prenom_t);
+
 
 ?>
 <!DOCTYPE html>

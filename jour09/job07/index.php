@@ -3,9 +3,6 @@ $db= mysqli_connect("localhost","root","","jour08");
 $requete = "SELECT SUM(superficie) as superficie_totale FROM etage";
 $query= mysqli_query($db,$requete);
 $superficie = mysqli_fetch_all($query, MYSQLI_ASSOC);
-var_dump($superficie);
-
-
 
 ?>
 <!DOCTYPE html>
