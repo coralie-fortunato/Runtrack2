@@ -1,9 +1,9 @@
 <?php
 $db= mysqli_connect("localhost","root","","jour08");
-$requete = "SELECT SUM(superficie) as superficie_totale FROM etage";
+$requete = "SELECT SUM(capacite) as capacite_totale FROM salle";
 $query= mysqli_query($db,$requete);
-$superficie = mysqli_fetch_all($query, MYSQLI_ASSOC);
-var_dump($superficie);
+$capacite = mysqli_fetch_all($query, MYSQLI_ASSOC);
+
 
 
 
@@ -19,8 +19,8 @@ var_dump($superficie);
     <table>
         <thead>
             <?php
-                foreach($superficie[0] as $superficie_totale=>$value){
-                    echo  "<th>". $superficie_totale ."</th>";
+                foreach($capacite[0] as $capacite_totale=>$value){
+                    echo  "<th>". $capacite_totale ."</th>";
                 }
                
             ?>
@@ -28,15 +28,14 @@ var_dump($superficie);
          
         </thead>
         <tbody>
-            <?php
-                foreach($superficie[0] as $superficie_totale=>$value){
+        <?php
+                foreach($capacite[0] as $capacite_totale=>$value){
                     echo "<tr>";
                     echo "<td>" . $value . "</td>";
                     echo "</tr>";
             
                 }
             ?>
-            
         </tbody>
     </table>
     
